@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   'use strict';
+
+      //   let x = 10;
+      //   console.log(x);
+      //   function test() {
+      //     y = 10;
+      //     console.log(y);
+      //   }
+      //   test();
+
+      // Variable
+
+      // Three Types of variables in JavaScript
+      // 1. var (ES5 and earlier) function-scoped
+      // 2. let (ES6 and later) block-scoped
+      // 3. const (ES6 and later) block-scoped, constant value
+
+      //   var a = 10;
+      //   var a = 20;
+
+      //   console.log(a);
+
+      // Global Scope
+      const globalVar = 'Hello, var!';
+
+      // Function scope
+      //   function varTest() {
+      //     const funVar = 30;
+      //     console.log('variable funVar calling in function:', funVar); // 30
+      //     console.log('variable globalVar calling in function:', globalVar); // Hello, var!
+      //   }
+      //   varTest();
+
+      // //   globalVar = 'Hello, let Testing!';
+      //   // Block scope
+      //   {
+      //     const blockVar = 40;
+      //     console.log('variable blockVar calling in block:', blockVar); // 40
+      //   }
+
+      //   console.log('Global variable globalVar:', globalVar);
+      //   console.log('Block scoped variable blockVar:', blockVar);
+      //   console.log('Function variable funVar:', funVar);
+
+      // Reserved Words
+
+      let function1 = 10;
+      console.log(function1);
+
+      // Variables Naming Conventions
+      let _name = 'John';
+      let $age = 25;
+      let firstName = 'Jane'; // camelCase
+      let last_name = 'Doe'; // snake_case
+      let Address1 = '123 Main St'; // PascalCase
+      const PI = 3.14; // Uppercase with underscores for constants
+      console.log(_name, $age, firstName, last_name, Address1, PI);
+    </script>
+  </body>
+</html>
