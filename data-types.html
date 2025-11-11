@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Data Types in JavaScript
+      // 1. Primitive Data Types immutable (cannot be changed)
+      //    a. Number
+      //    b. String
+      //    c. Boolean
+      //    d. Undefined
+      //    e. Null
+      //    f. Symbol (ES6 and later)
+      // 2. Non-Primitive Data Types mutable (change value)
+      //    a. Object
+      //    b. Array
+      //    c. Function
+
+      // Primitive Data Types Examples
+      let massage = 'Hello'; // string
+      massage[0] = 'a'; // strings are immutable
+      console.log('String value:', massage);
+
+      let userDetails = {
+        name: 'John',
+        age: 30,
+      };
+
+      console.log('Object value before change:', userDetails);
+      userDetails.age = 18; // objects are mutable
+      userDetails.name = 'Dev'; // objects are mutable
+      console.log('Object value after change:', userDetails);
+
+      let numbers = [1, 2, 3, 4, 5];
+      console.log('Array value before change:', numbers);
+      numbers[0] = 10; // arrays are mutable
+      console.log('Array value after change:', numbers);
+    </script>
+  </body>
+</html>

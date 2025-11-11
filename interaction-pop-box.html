@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Interaction Pop Box Examples
+
+      // Alert Box
+      //   alert('This is an alert box!');
+
+      // Confirm Box
+      //   let userResponse = confirm('Do you want to proceed?');
+      //   if (userResponse) {
+      //     console.log('User chose to proceed.');
+      //   } else {
+      //     console.log('User canceled the action.');
+      //   }
+
+      // Prompt Box
+      let userName = prompt('Please enter your name:', 'Guest');
+      if (userName !== null) {
+        console.log('Hello, ' + userName + '!');
+      } else {
+        console.log('User did not enter a name.');
+      }
+    </script>
+  </body>
+</html>
