@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // JavaScript Provides these types of loops:
+      // 1. for loop
+      // 2. while loop
+      // 3. do...while loop
+      // 4. for...in loop
+      // 5. for...of loop
+
+      // for loop
+      // Syntax: for (initialization; condition; increment/decrement)
+
+      //   console.log('For Loop:');
+      //   for (let i = 1; i <= 0; i++) {
+      //     console.log('For Iteration number: ' + i);
+      //   }
+
+      // while loop
+      // Syntax: while (condition) { // code to be executed }
+
+      //   console.log('While Loop:');
+      //   let j = 1;
+      //   while (j <= 0) {
+      //     console.log('While Iteration number: ' + j);
+      //     j++;
+      //   }
+
+      // do...while loop
+      // Syntax: do { // code to be executed } while (condition);
+
+      //   console.log('Do...While Loop:');
+      //   let k = 1;
+      //   do {
+      //     console.log('Do...While Iteration number: ' + k);
+      //     k++;
+      //   } while (k <= 0);
+
+      // for...in loop
+      // Syntax: for (key in object) { // code to be executed }
+      //   console.log('For...In Loop:');
+
+      const person = {
+        name: 'John',
+        age: 30,
+        city: 'New York',
+        address: { street: '5th Avenue', zip: '10001' },
+      };
+
+      //   const keys = Object.keys(person);
+      //   console.log(keys);
+
+      //   for (let index = 0; index < keys.length; index++) {
+      //     const key = keys[index];
+      //     console.log(`Person ${key}: ${person[key]}`);
+      //   }
+
+      //   for (let key in person) {
+      //     if (key === 'address' && 'street' in person[key]) {
+      //       console.log(`Street: ${person[key]['street']}`);
+      //     } else {
+      //       console.log(`${key}: ${person[key]}`);
+      //     }
+      //   }
+
+      //   if ('name' in person) {
+      //     console.log("The 'name' property exists in the person object.");
+      //   } else {
+      //     console.log("The 'name' property does not exist in the person object.");
+      //   }
+
+      // for...of loop
+      // Syntax: for (variable of iterable) { // code to be executed }
+      console.log('For...Of Loop:');
+      const colors = ['Red', 'Green', 'Blue', 'Yellow'];
+
+      //Without for...of loop
+      //   for (let index = 0; index < colors.length; index++) {
+      //     console.log('Color: ' + colors[index]);
+      //   }
+
+      for (let color of colors) {
+        console.log('Color: ' + color);
+      }
+    </script>
+  </body>
+</html>

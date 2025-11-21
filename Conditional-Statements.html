@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // if conditional statement
+      let age = 18;
+      if (age >= 18) {
+        console.log('You are an adult.');
+      } else {
+        console.log('You are a minor.');
+      }
+
+      // if...else if...else conditional statement
+      let marks = 75;
+      let totalMarks = 100;
+      let percentage = (marks / totalMarks) * 100;
+      if (percentage >= 90) {
+        console.log('Grade: A');
+      } else if (percentage >= 80) {
+        console.log('Grade: B');
+      } else if (percentage >= 70) {
+        console.log('Grade: C');
+      } else {
+        console.log('Grade: F');
+      }
+
+      // switch conditional statement
+      let day = 3;
+      switch (day) {
+        case 1:
+          console.log('Monday');
+          break;
+        case 2:
+          console.log('Tuesday');
+          break;
+        case 3:
+          console.log('Wednesday');
+          break;
+        case 4:
+          console.log('Thursday');
+          break;
+        case 5:
+          console.log('Friday');
+          break;
+        case 6:
+          console.log('Saturday');
+          break;
+        case 7:
+          console.log('Sunday');
+          break;
+        default:
+          console.log('Invalid day');
+      }
+
+      // Ternary Operator
+      let isMember = false;
+      let discount = isMember ? 0.1 : 0;
+      console.log('Discount:', discount);
+      console.log('Age is adult:', age >= 18 ? 'Yes' : 'No');
+
+      // Traditional switch statement
+      //   let value = 2;
+      //   let result = switch (value) {
+      //      case 1 => "One";
+      //      case 2 => "Two";
+      //      default => "Other";
+      //   }
+      //   console.log(result);
+
+      //   let grade = 'A';
+      //     let message = grade switch {
+      //         case 'A','B' => 'Excellent';
+      //         case 'C' => 'Average';
+      //         case 'D','E' => 'Needs Improvement';
+      //         default => 'Needs Improvement';
+      //     };
+      //     console.log(message);
+
+      //   let marks2 = 80;
+
+      //   let result = switch(true){
+      //     case (marks2 >= 90) =>{
+      //         'Grade A';
+      //     }
+      //     case (marks2 >= 80) =>{
+      //         'Grade B';
+      //     }
+      //     case (marks2 >= 70) =>{
+      //         'Grade C';
+      //     }
+      //     default => {
+      //         'Grade F';
+      //     }
+      //   }
+
+      //     const getPrice = (item) => {
+      //      switch(item){
+      //       case 'apple' => 80;
+      //       case 'banana'=> 45;
+      //       case 'orange'=> 30;
+      //       default => 0;
+      //      }
+      //     }
+
+      //   console.log(getPrice('banana'));
+    </script>
+  </body>
+</html>
