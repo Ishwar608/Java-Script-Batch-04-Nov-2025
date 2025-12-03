@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // using quotes to define a string
+      // const greeting = 'Hello, World!';
+      //   console.log(greeting); // Output: Hello, World!
+
+      //   const name = 'Alice';
+      //   console.log(name); // Output: Alice
+
+      //   const message = `Welcome, ${name}!`; // using template literals
+      //   console.log(message); // Output: Welcome, Alice!
+
+      //   // string Properties and methods
+      //   const sampleString = 'JavaScript" is\'s awesome!';
+      //   console.log(sampleString.length); // Output: 22
+
+      //   // string methods
+      //   console.log(sampleString.toUpperCase()); // Output: JAVASCRIPT IS AWESOME!
+      //   console.log(sampleString.toLowerCase()); // Output: javascript is awesome!
+
+      //   let strChar = sampleString.charAt(1);
+      //   console.log(strChar); // Output: J
+
+      //   let strSlice = sampleString.slice(0, 10);
+      //   console.log(strSlice); // Output: JavaScript
+      //   console.log(sampleString.slice(2, 15)); // Output: awesome!
+      //   console.log(sampleString.slice(-8)); // Output: awesome!
+
+      //   let strSubstr = greeting.substr(-4);
+      //   console.log(strSubstr); // Output: JavaScript
+
+      //   let strSubstring = greeting.substring(-4);
+      //   console.log(strSubstring); // Output: JavaScript
+
+      // let strReplace = greeting.replace('World', 'Everyone');
+      // console.log(strReplace); // Output: Hello, Everyone!
+
+      // let strInclude = greeting.includes('dev');
+      // console.log(strInclude); // Output: true
+
+      // let strIndexOf = greeting.indexOf('o');
+      // console.log(strIndexOf); // Output: 7
+
+      // let strTrim = '   Hello World!   '.trim();
+      // console.log(strTrim); // Output: Hello World!
+
+      // let massage = 'hello studnets 2024 ';
+      // let srtSplit = massage.split('e');
+      // console.log(srtSplit); // Output: [ 'Hello', 'studnets', '2024' ]
+
+      //   const ExaConcat = greeting.concat(' ', message);
+      //   console.log(ExaConcat); // Output: Hello World!
+
+
+      // Slice vs Substring vs Substr
+      // const exampleString = "JavaScript";
+      // console.log(exampleString.slice(4)); // Output: Script
+      // console.log(exampleString.slice(-6, -1)); // Output: Scrip
+      // console.log(exampleString.substring(-6, -1));
+
+
+      // console.log(exampleString.substring(4,1));
+      // console.log(exampleString.slice(4,1));
+
+      // isWellformed() method 
+      // const str = 'Hello\uD83D\uDE00';
+      // console.log(str.isWellFormed()); // Output: true
+      // const invalidStr = 'Hello\uD83D';
+      // console.log(invalidStr.isWellFormed()); // Output: false
+
+      // // toWellformed() method
+      // const malformedStr = 'Hello\u1F600';
+      // console.log(malformedStr.toWellFormed()); // Output: Hello�
+
+      // // padStart() and padEnd() methods
+      // const password = '5542';
+      // console.log(password.padStart(8, '*')); // Output: **5542
+      // console.log(password.padEnd(12, '*')); // Output: 5542******
+
+      // startsWith() and endsWith() methods
+      // let fileName = "image.png";
+
+      // console.log(fileName.startsWith("image")); // Output: true
+      // console.log(fileName.endsWith(".png")); // Output: true
+
+      let x = 500;
+      let y = new Number(500);
+
+      console.log("X value:-",x);
+      console.log("Y value:-",y);
+
+      console.log(x == y);
+      console.log(x === y);
+
+      console.log(typeof x);
+      console.log(typeof y);
+      
+      
+    </script>
+  </body>
+</html>

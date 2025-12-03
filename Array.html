@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Create an array with some initial values
+        // let fruits = ['Apple', 'Banana', 'Cherry'];
+        // const numberList = [1, 2, 3, 4, 5];
+        // console.log('Initial array:', fruits[3]);
+        // console.log('Initial Number:', numberList);
+
+        // const newArray = new Array('Orange', 'Pineapple'); // Create an array using the Array constructor
+        // console.log('New Array:', newArray);
+
+        // JavaScript array methods
+
+        // 1. Creation & checking methods
+        // console.log('Is fruits an array?', Array.isArray(fruits)); // Check if 'fruits' is an array
+
+        // const productDetails = {
+        //     name: 'Laptop',
+        //     price: 1200,
+        //     users: [{ name: 'John', age: 30 }, { name: 'Jane', age: 25 }]
+        // };
+
+        // for (let key in productDetails) {
+        //     if (Array.isArray(productDetails[key])) {
+        //         for (let value of productDetails[key]) {
+        //             console.log(`${key} - Name: ${value.name}, Age: ${value.age}`);
+        //         }
+        //     } else {
+        //         console.log(`${key}: ${productDetails[key]}`);
+        //     }
+        // }
+        // console.log(Array.from('Hello')); // Convert a string to an array of characters
+        // console.log(Array.of(1,2,3));
+        // const nameOfArray = Array.from('Hello World');
+        // console.log(nameOfArray.join(""));
+
+
+
+        // 2. Accessing & finding methods
+        // console.log('First fruit:', fruits[2]); // Access the first element
+        // console.log(fruits.at(-1))
+        // console.log(fruits.indexOf('Banana')); // Find the index of 'Banana'
+        // console.log([1,2,3,2,4].indexOf(2,2));
+
+        // console.log(['Apple', 'Banana', 'Cherry','Banana'].lastIndexOf('Banana',2));
+
+        // console.log(['Apple', 'Banana', 'Cherry'].includes('banana')); // Check if 'Banana' is in the array
+        // const users = [
+        //     {
+        //         "id": 1,
+        //         "name": "Leanne Graham",
+        //         "username": "Bret",
+        //         "email": "Sincere@april.biz",
+        //         "address": {
+        //             "street": "Kulas Light",
+        //             "suite": "Apt. 556",
+        //             "city": "Gwenborough",
+        //             "zipcode": "92998-3874",
+        //             "geo": {
+        //                 "lat": "-37.3159",
+        //                 "lng": "81.1496"
+        //             }
+        //         },
+        //         "phone": "1-770-736-8031 x56442",
+        //         "website": "hildegard.org",
+        //         "company": {
+        //             "name": "Romaguera-Crona",
+        //             "catchPhrase": "Multi-layered client-server neural-net",
+        //             "bs": "harness real-time e-markets"
+        //         }
+        //     },
+        //     {
+        //         "id": 2,
+        //         "name": "Ervin Howell",
+        //         "username": "Samantha",
+        //         "email": "Shanna@melissa.tv",
+        //         "address": {
+        //             "street": "Victor Plains",
+        //             "suite": "Suite 879",
+        //             "city": "Wisokyburgh",
+        //             "zipcode": "90566-7771",
+        //             "geo": {
+        //                 "lat": "-43.9509",
+        //                 "lng": "-34.4618"
+        //             }
+        //         },
+        //         "phone": "010-692-6593 x09125",
+        //         "website": "anastasia.net",
+        //         "company": {
+        //             "name": "Deckow-Crist",
+        //             "catchPhrase": "Proactive didactic contingency",
+        //             "bs": "synergize scalable supply-chains"
+        //         }
+        //     },
+        //     {
+        //         "id": 3,
+        //         "name": "Clementine Bauch",
+        //         "username": "Samantha",
+        //         "email": "Nathan@yesenia.net",
+        //         "address": {
+        //             "street": "Douglas Extension",
+        //             "suite": "Suite 847",
+        //             "city": "McKenziehaven",
+        //             "zipcode": "59590-4157",
+        //             "geo": {
+        //                 "lat": "-68.6102",
+        //                 "lng": "-47.0653"
+        //             }
+        //         },
+        //         "phone": "1-463-123-4447",
+        //         "website": "ramiro.info",
+        //         "company": {
+        //             "name": "Romaguera-Jacobson",
+        //             "catchPhrase": "Face to face bifurcated interface",
+        //             "bs": "e-enable strategic applications"
+        //         }
+        //     }
+        // ]
+
+        // console.log([{ id: 3, name: "A" }, { id: 2, name: "B" }, { id: 1, name: "C" }].find(user => user.id === 1)); // Find the first user with id 2
+        // console.log(users.find(user => user.username === 'Samantha')); // Find the index of the first user with id 2
+        // console.log(users.findLast(user => user.username === 'Samantha')); // Find the index of the first user with id 2
+
+        // console.log(users.findIndex(user => user.username === 'Samantha')); // Find the index of the first user with id 2
+        // console.log(users.findLastIndex(user => user.username === 'Samantha')); // Find the index of the first user with id 2
+
+        // Adding & removing methods
+        let colors = ['Red', 'Green', 'Blue'];
+        colors.push('Yellow'); // Add 'Yellow' to the end        
+        colors.push('Yellow-2');
+        colors.push('Yellow-3');
+        console.log(colors);
+        colors.pop(); // Remove the last element
+        colors.pop(); // Remove the last element
+        colors.pop(); // Remove the last element
+        console.log(colors);
+        colors.unshift('Purple'); // Add 'Purple' to the beginning
+        colors.unshift('Purple-2');
+        console.log(colors);
+        colors.shift(); // Remove the first element
+        colors.shift(); // Remove the first element
+        console.log(colors);
+    </script>
+</body>
+
+</html>

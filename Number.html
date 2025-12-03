@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Number type
+       // integer -> 1, 20,200,-5
+       // decimal (float) -> 1.5, -0.5, 3.14
+       // special number -> Infinity, -Infinity, NaN
+
+    // let a = 10; // integer
+    // let b = 3.14; // decimal
+    // let c = Infinity; // special number
+    // let d = -Infinity; // special number
+    // let e = NaN; // special number
+
+    // console.log("a:", a);
+    // console.log("b:", b);
+    // console.log("c:", c);
+    // console.log("d:", d);
+    // console.log("e:", e);
+
+
+    // let numObject = new Number(42);
+    // console.log("numObject:", numObject);
+
+    // Number methods
+    
+    // isInteger
+    console.log("isInteger(10):", Number.isInteger(10)); // true
+    console.log("isInteger(3.14):", Number.isInteger(3.14)); // false
+
+    // isNaN
+    console.log("isNaN(NaN):", Number.isNaN(NaN)); // true
+    console.log("isNaN(42):", Number.isNaN(42)); // false
+
+    // parseInt
+    console.log("parseInt('42px'):", Number.parseInt('42px')); // 42
+    console.log("parseInt('3.14'):", Number.parseInt('3.14')); // 3
+    console.log("parseInt('abc'):", Number.parseInt('abc42')); // NaN
+
+    // parseFloat
+    console.log("parseFloat('3.14px'):", Number.parseFloat('3.14px')); // 3.14
+    console.log("parseFloat('42'):", Number.parseFloat('42')); // 42
+    console.log("parseFloat('abc'):", Number.parseFloat('abc3.14')); // NaN
+    console.log("parseFloat('12.5kg'):", Number.parseFloat('12.5kg')); // 12.5
+
+    // toFixed
+    let num = 3.14159;
+    console.log("num.toFixed(2):", num.toFixed(2)); // "3.14"
+    console.log("num.toFixed(4):", num.toFixed(4)); // "3.1416"
+
+    // toString
+    let number = 255;
+    console.log("number.toString(10):", number.toString(10)); // "255"
+    console.log("number.toString(16):", number.toString(16)); // "ff"
+    console.log("number.toString(2):", number.toString(2)); // "11111111"
+
+    // valueOf
+    let numObj = new Number(100);
+    console.log("numObj.valueOf():", numObj.valueOf()); // 100
+
+    // isFinite (infinity, -infinity, NaN are not finite)
+    console.log("isFinite(100):", Number.isFinite(100)); // true
+    console.log("isFinite(10.989):", Number.isFinite(10.989)); // true
+    console.log("isFinite(Infinity):", Number.isFinite(Infinity)); // false
+    console.log("isFinite(NaN):", Number.isFinite(NaN)); // false
+
+    // isSafeInteger (safe integers = between - (2^53 - 1) and 2^53 - 1)
+    console.log("isSafeInteger(9007199254740991):", Number.isSafeInteger(9007199254740991)); // true
+    console.log("isSafeInteger(9007199254740992):", Number.isSafeInteger(9007199254740992)); // false
+
+    // tolocalestring
+    let numberValue = 1234567.89;
+    console.log("numberValue.toLocaleString():", numberValue.toLocaleString()); // "1,234,567.89"
+
+    // MAX_VALUE and MIN_VALUE
+    let maxValue = Number.MAX_VALUE;
+    console.log("Number.MAX_VALUE:", Number.MAX_VALUE);
+    console.log("Max Value:", maxValue + 1 === maxValue); // true
+
+    let minValue = Number.MIN_VALUE;
+    console.log("Number.MIN_VALUE:", Number.MIN_VALUE);
+    console.log("Min Value:", minValue / 2 === 0); // 
+    
+    
+</script>
+</body>
+</html>

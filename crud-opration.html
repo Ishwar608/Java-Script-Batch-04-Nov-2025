@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="inputBox" placeholder="Enter your name" type="text" />
+    <button id="addUser" onclick="handleAddUser()">Add User</button>
+    <button id="deleteFirstUser">First User Delete</button>
+    <button id="deleteLastUser">Last User Delete</button>
+    <ol id="userDetails"></ol>
+    <script>
+        // CRUD Operations in JavaScript Arrays
+        let users = ["Manan","Dev"];
+        const inputBox = document.getElementById('inputBox');
+
+        function handleAddUser() {
+            const userName = inputBox.value.trim();
+            if (userName) {
+                users.push(userName); // Create - Add user to the end of the array
+                inputBox.value = ''; // Clear input box
+                displayUsers()
+            } else {
+                console.log('Please enter a valid name.');
+            }
+        }
+
+        function displayUsers() {
+            const userDetails = document.getElementById('userDetails');
+            userDetails.innerHTML = ''; // Clear existing list
+            users.forEach(user => {
+               userDetails.innerHTML += `<li style="margin: 5px 0;">${user} <button>Delete</button> <button>Edit</button></li>`;
+            });
+        }
+        document.onload = displayUsers();
+    </script>
+</body>
+
+</html>

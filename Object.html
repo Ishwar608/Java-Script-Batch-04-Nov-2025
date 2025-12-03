@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Object in JavaScript
+
+        // Creating an Object
+        let person = {
+            name: "Ishwar",
+            age: 25,
+            city: "Mumbai",
+            isVerified: true,
+            skills: ["JavaScript", "HTML", "CSS"],
+            address: {
+                street: "123 Main St",
+                zip: "400001"
+            },
+            greet: function () {
+                console.log("Hello, " + this.name);
+            },
+            currentDate: new Date()
+        };
+
+        // Adding Properties
+
+
+        // person.name = "Manan"; // Updating property
+
+
+        // console.log(person.greet()); // Calling method
+
+        // new keyword
+        // let car = new Object({
+        //     make: "Honda",
+        //     model: "Civic"
+        // });
+        // car.make = "Toyota";
+        // car.model = "Camry";
+        // console.log(car);
+
+        // const user =new Object({}); // Empty Object
+        const user = {}; // Empty Object
+        user.firstname = "ishwar";
+        user.lastname = "patel";
+        user.email = "ishwar@example.com";
+        user.age = 30;
+        user["isAdmin"] = false;
+        
+        fullname = function() {
+            return this.firstname + " " + this.lastname;
+        };
+        
+        user.fullname = fullname;
+
+        delete user.age; // Deleting Property
+        // console.log(user);
+
+        // console.log("email" in user); // Checking Property Existence
+
+        // for (let key in user) {
+        //     if(typeof user[key] === 'function') {
+        //         console.log(key.toUpperCase() + ": " + user[key]()); // Calling method
+        //         continue;
+        //     }
+        //     console.log(key.toUpperCase() + ": " + user[key]); // Iterating Over Properties
+        // }
+
+        // Object Methods
+
+        const student = {
+            name: "Alice",
+            age: 22,
+            major: "Computer Science"
+        };
+        // const  entriesExam  = [
+        //     ['name', 'Alice'],
+        //     ['age', 22],
+        //     ['major', 'Computer Science']
+        // ]
+        // Object.keys()
+        // console.log(Object.keys(student)); // Get Property Names
+        // for (let key of Object.keys(user)) {
+        //     if(typeof user[key] === 'function') {
+        //         console.log(key.toUpperCase() + ": " + user[key]()); // Calling method
+        //         continue;
+        //     }
+        //     console.log(key.toUpperCase() + ": " + user[key]); // Iterating Over Properties
+        // }
+
+        // Object.values()
+        // console.log(Object.values(student)); // Get Property Values
+
+        // Object.entries()
+        console.log(Object.entries(student)); // Get Key-Value Pairs
+
+        for (let [key, value] of Object.entries(student)) {
+            console.log(key.toUpperCase() + ": " + value); // Iterating Over Key-Value Pairs
+        }
+    </script>
+</body>
+
+</html>
